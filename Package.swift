@@ -1,28 +1,27 @@
 // swift-tools-version:4.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "ecodatum-common",
-    products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "ecodatum-common",
-            targets: ["ecodatum-common"]),
+  name: "ecodatum-common",
+  products: [
+    .library(
+      name: "ecodatum-common",
+      targets: ["ecodatum-common"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+  dependencies: [
+    .package(url: "https://github.com/koher/EasyImagy.git", from: "0.5.0"),
+    .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "1.6.0")
     ],
-    targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(
-            name: "ecodatum-common",
-            dependencies: []),
-        .testTarget(
-            name: "ecodatum-commonTests",
-            dependencies: ["ecodatum-common"]),
+  targets: [
+    .target(
+      name: "ecodatum-common",
+      dependencies: [
+        "EasyImagy",
+        "SwiftyBeaver"
+      ]),
+    .testTarget(
+      name: "ecodatum-commonTests",
+      dependencies: ["ecodatum-common"]),
     ]
 )

@@ -1,0 +1,9 @@
+FROM swift:4.2
+
+WORKDIR /root 
+
+COPY Sources /root/Sources
+COPY Tests /root/Tests
+COPY Package.swift /root
+
+CMD ["swift", "test"]

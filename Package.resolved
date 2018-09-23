@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "EasyImagy",
+        "repositoryURL": "https://github.com/koher/EasyImagy.git",
+        "state": {
+          "branch": null,
+          "revision": "aba0138d55e759386a0accb16630ebf105b18604",
+          "version": "0.5.1"
+        }
+      },
+      {
+        "package": "SwiftyBeaver",
+        "repositoryURL": "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+        "state": {
+          "branch": null,
+          "revision": "562a81878674cc8bd74efab274776c35d2519d04",
+          "version": "1.6.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
